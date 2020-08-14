@@ -1,0 +1,234 @@
+[
+{
+ "formTypeKey": "Research",
+ "formTypeName": "Research Survey",
+ "activities": [
+	{
+		"activityKey": "rworkflow",
+		"activityName": "Workflow Management"    
+		},
+		{
+		"activityKey": "rmarket",
+		"activityName": "Market Research"    
+		},
+		{
+		"activityKey": "rcustomer",
+		"activityName": "Customer Research"    
+		},
+		{
+		"activityKey": "racademic",
+		"activityName": "Academic Research"    
+		},
+		{
+		"activityKey": "rother",
+		"activityName": "Other"    
+		}
+	]
+},
+{
+ "formTypeKey": "Request",
+ "formTypeName": "Request Form",
+ "activities": [
+		{
+		"activityKey": "rqImprove",
+		"activityName": "Improve Service"    
+		},
+		{
+		"activityKey": "rqsales",
+		"activityName": "Sales"    
+		},
+		{
+		"activityKey": "rqmanage",
+		"activityName": "Manage Requests"    
+		},
+		{
+		"activityKey": "rqother",
+		"activityName": "Other"    
+		}
+	]
+},
+{
+ "formTypeKey": "Registration",
+ "formTypeName": "Registration Form",
+ "activities": [
+		{
+		"activityKey": "rfsales",
+		"activityName": "Sales"    
+		},
+		{
+		"activityKey": "rflead",
+		"activityName": "Lead generation"    
+		},
+		{
+		"activityKey": "rfrecruit",
+		"activityName": "Recruiting"    
+		},
+		{
+		"activityKey": "rfeventplan",
+		"activityName": "Event Planning"    
+		},
+		{
+		"activityKey": "rfaudience",
+		"activityName": "Audience Engagement"    
+		},
+		{
+		"activityKey": "rfother",
+		"activityName": "Other"    
+		}
+	]
+},
+{
+ "formTypeKey": "Poll",
+ "formTypeName": "Poll",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Payment",
+ "formTypeName": "Payment Form",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Order",
+ "formTypeName": "Order Form",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Lead",
+ "formTypeName": "Lead gen Form",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Feedback",
+ "formTypeName": "Feedback Form",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Contact",
+ "formTypeName": "Contact Form",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Classification",
+ "formTypeName": "Classification Quiz",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Checklist",
+ "formTypeName": "Checklist",
+ "activities": [
+		{
+		"activityKey": "aaa",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Assessment",
+ "formTypeName": "Assessment Quiz",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Application",
+ "formTypeName": "Application Form",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+},
+{
+ "formTypeKey": "Other",
+ "formTypeName": "Other",
+ "activities": [
+		{
+		"activityKey": "t1Act1",
+		"activityName": "t1Act1Name"    
+		},
+		{
+		"activityKey": "t1Act2",
+		"activityName": "t1Act2Name"  
+		}		
+	]
+}
+]

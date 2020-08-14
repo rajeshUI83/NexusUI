@@ -1,0 +1,53 @@
+
+<div class="row">
+    <div class="col-xs-1">{{formName}}</div>
+    <div class="col-xs-6">
+        <form #formCreate="ngForm">
+            <div *ngIf="showQuestionInputForm">
+                <div name="phoneNumber">
+                <button class="default-btn">g1</button>
+            
+                
+                <input [(ngModel)]="questionModel" #questionInput="ngModel" type="text" placeholder="Type question here..."/>
+                    
+                <pre>{{ questionInput | json }}</pre>
+                
+                <BR><BR>
+                - <input type="text" name="choice"/>        
+                </div>
+            </div>
+            <BR>
+            <button class="default-btn" (click)="getQuestionTypes()">+</button><label>Add your first question</label>
+            <BR><BR>
+            
+            <select [(ngModel)]="questionTypeModel" name="questionType" *ngIf="showQuestionTypes" (ngModelChange)="showQuestionInput($event)">
+                <option value="">Choose a question type</option>
+                <option *ngFor="let questionType of questionTypes" [value]="questionType.questionTypeKey">{{questionType.questionTypeName}}</option>
+                
+                <!--<option>Multiple Choice</option>
+                <option>Phone Number</option>
+                <option>Short Text</option>
+                <option>Long Text</option>
+                <option>Statement</option>-->
+            </select>
+            </form>
+    </div>
+    <div class="col-xs-5"></div>
+</div>
+<!-- <div style="display: flex; padding-top: 35px;padding-left: 150px;">      
+<div style="width: 500px;"> 
+   <add-question></add-question>
+   
+</div>
+
+<div style="width: 400px; padding-left: 20px;"> 
+   <show-question></show-question>
+  <select>
+      <option>codes</option>
+      <option>U.S.</option>
+      <option>Spain</option>
+  </select>
+  <input type="text" name="phoneNumber" placeholder="(201)555-0123" [value]="">
+</div>
+
+</div> -->

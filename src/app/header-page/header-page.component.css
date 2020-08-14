@@ -1,0 +1,108 @@
+.sticky-header{
+    top: 0;
+    position: fixed;  
+    /* height: 100px; */
+}
+
+.header-main{
+    /* padding: 25px 50px 0px; */
+    
+}
+
+.block{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    color: #18191B;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;    
+    -webkit-box-align: center;    
+}
+.header-bar{
+    display: flex;        
+}
+
+.home-img-link {
+    display: inline-block;
+    
+    background-size: 70px auto;        
+    width: 90px;
+    height: 50px;
+}
+ul{
+    display: flex;
+}
+header-tabs-ul{
+    border-bottom-color:rgb(255, 255, 255);
+    border-bottom-style:solid;
+    border-bottom-width:3px;
+    box-sizing:border-box;
+    /* display:block; */    
+    height:72px;
+}
+.header-tab-li{
+    list-style-type:none;
+    text-decoration-color:rgb(24, 25, 27);
+    text-decoration-line:none;
+    text-decoration-style:solid;    
+    -webkit-font-smoothing:antialiased;
+    font-family:AvenirNext-DemiBold, "Helvetica Neue", helvetica, arial, geneva, sans-serif;
+    font-size:16px;
+    font-style:normal;
+    font-weight:400;            
+    text-align:left;    
+    line-height:40px; 
+    /* padding-bottom:35px; */
+    /* padding-left:13px; */
+    /* padding-right:13px; */
+    /* padding-top:10px;        */
+}
+.header-tab-text{    
+    text-decoration: none;
+    color:rgb(24, 25, 27);
+    cursor:pointer;    
+    width:55.2813px;
+    border-bottom: 3px solid #fff;
+    padding: 10px 13px 35px;
+    /* display: block;     */
+}
+a:hover{
+    text-decoration: underline
+}
+.button-style{
+    appearance:none;
+background-color:rgb(92, 201, 119);
+border-bottom-left-radius:30px;
+border-bottom-right-radius:30px;
+border-top-left-radius:30px;
+border-top-right-radius:30px;
+box-sizing:border-box;
+color:rgb(255, 255, 255);
+cursor:pointer;
+display:inline-block;
+font-family:AvenirNext-DemiBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:18px;
+font-style:normal;
+font-weight:400;
+height:43px;
+line-height:27px;
+list-style-type:none;
+padding-bottom:8px;
+padding-left:40px;
+padding-right:40px;
+padding-top:8px;
+text-align:center;
+text-decoration-color:rgb(255, 255, 255);
+text-decoration-line:none;
+text-decoration-style:solid;
+transition-delay:0s;
+transition-duration:0.5s;
+transition-property:background-color;
+transition-timing-function:ease;
+width:175.313px;
+-webkit-font-smoothing:antialiased;
+}
+
+

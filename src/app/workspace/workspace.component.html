@@ -1,0 +1,47 @@
+<div style="padding-top: 25px;padding-left: 100px;">
+
+<div style="display: flex">
+<div class="button-link">
+
+        <div class="row">
+                        <a class="button-style" (click)="openModal()"> 
+                            Create New template +
+                        </a>    
+                        
+                        <modal #myModal (onOpen)="hello()" (onClose)="closenow()">
+                            <modal-header>
+                                Bring your new typeform to Life
+                            </modal-header>
+                            <modal-content>
+                                    <label>Give it a name</label>
+                                    <BR>
+                                    <input [(ngModel)]="tFormNameModel"  name="tFormName"/>
+                                    <BR>
+                                        <label>What are you creating? (?)</label>    
+                                        <BR>
+                                            <select [(ngModel)]="tFormTypeModel" name="tFormType" (ngModelChange)="onFormTypeChange($event)">
+                                                    <option value="">Select form type</option>
+                                                    <option *ngFor="let formType of formTypes" [value]="formType.formTypeKey">{{formType.formTypeName}}</option>
+                                            </select> 
+                                            <BR>
+                                            <label>What's it for? (?)</label>    
+                                        <BR>
+                                        <select [(ngModel)]="tFormActivityModel" name="tFormActivity">
+                                            <option value="">Select activity</option>
+                                            <option *ngFor="let activity of activities" [value]="activity.activityKey">{{activity.activityName}}</option>                        
+                                        </select>                
+                            </modal-content>
+                            <modal-footer>
+                                <button class="btn btn-primary" (click)="closeModal(tFormNameModel)">Continue</button>
+                            </modal-footer>
+                        </modal>
+                    </div>        
+<!--<a class="button-style" routerLink="/new-form-create">New typeForm <BR> <button class="default-btn">+</button> </a>-->
+</div>
+<div>
+        <a class="button-style">Use Existing Template</a>
+</div>
+</div>
+</div>
+
+        
