@@ -16,11 +16,15 @@ export class TFormService {
     return formTypes;
   }
   loadAllQuestionTypes(): QuestionType[]{
-    let questionTypes: QuestionType[];
-    let questionType1: QuestionType=new QuestionType("M","Multiple Choice");
-    let questionType2: QuestionType=new QuestionType("P","Phone Number");
-    let questionType3: QuestionType=new QuestionType("S","Short Answer");
-    questionTypes=[questionType1,questionType2,questionType3];
+    
+    let questionType1=new QuestionType("M","Multiple Choice");
+    let questionType2=new QuestionType("P","Phone Number");
+    let questionType3=new QuestionType("S","Short Answer");
+    const questionTypes = [
+      {"questionTypeKey":"M","questionTypeName":"Multiple Choice"}
+      ,{"questionTypeKey":"P","questionTypeName":"Phone Number"},
+      {"questionTypeKey":"S","questionTypeName":"Short Answer"}
+    ];
     return questionTypes;
 
   }

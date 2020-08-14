@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ModalModule } from 'ngb-modal';
+import {MaterialModule} from './material/material.module';
 
 import { AppComponent } from './app.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
@@ -11,6 +12,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
 import { RouterModule } from '@angular/router';
 import { FormInputsCreateComponent } from './form-inputs-create/form-inputs-create.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { FormInputsCreateComponent } from './form-inputs-create/form-inputs-crea
     AppRoutingModule,
     FormsModule,
     ModalModule,
+    MaterialModule,
     RouterModule.forRoot([
       { path: "", component: MainPageComponent},
       { path: "workspace", component: WorkspaceComponent},      
       { path: "create", component: FormInputsCreateComponent}              
-    ])
+    ]),
+    BrowserAnimationsModule
     
   ],
   providers: [],

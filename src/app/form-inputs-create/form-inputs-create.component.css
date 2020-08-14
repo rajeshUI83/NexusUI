@@ -30,3 +30,12 @@
     width:17.313px;
     -webkit-font-smoothing:antialiased;
     }
+
+
+    .border-right{
+        border-right:1px solid #000;
+    }
+
+    .h-60{
+        height:60vh;
+    }
