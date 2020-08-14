@@ -21,9 +21,10 @@ export class TFormService {
     let questionType2=new QuestionType("P","Phone Number");
     let questionType3=new QuestionType("S","Short Answer");
     const questionTypes = [
-      {"questionTypeKey":"M","questionTypeName":"Multiple Choice"}
-      ,{"questionTypeKey":"P","questionTypeName":"Phone Number"},
-      {"questionTypeKey":"S","questionTypeName":"Short Answer"}
+      {"questionTypeKey":"M","questionTypeName":"Multiple Choice", "imageIcon": "done", "backgroundColor": "rgb(79, 169, 179)"}
+      ,{"questionTypeKey":"P","questionTypeName":"Phone Number", "imageIcon": "phone", "backgroundColor": "rgb(63, 196, 106)"},
+      {"questionTypeKey":"S","questionTypeName":"Short Answer", "imageIcon": "short_text", "backgroundColor": "rgb(255, 186, 73)"},
+      {"questionTypeKey":"L","questionTypeName":"Long Answer", "imageIcon": "notes", "backgroundColor": "rgb(226, 109, 90)"}
     ];
     return questionTypes;
 

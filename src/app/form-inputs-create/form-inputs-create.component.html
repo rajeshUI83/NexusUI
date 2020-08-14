@@ -1,18 +1,14 @@
 <div class="pl-3">
-<h4>WorkSpace : {{formName}}</h4>
+    <h6>WorkSpace Name: {{formName}}</h6>
+    <button style="float: right;">Preview</button>
 </div>
 <div class="row container">
     <div class="col-lg-6 border-right  h-60">
         <form #formCreate="ngForm">
-            <div *ngIf="showQuestionInputForm && questionModels.length>0">
-                <div name="phoneNumber" *ngFor="let questionModel of questionModels">
-                <button class="default-btn">g1</button>
-                <input [(ngModel)]="questionModel" name="question"  type="text" placeholder="Type question here..."/>
-                    
-                <pre></pre>
-                
-                <BR><BR>
-                - <input type="text" name="choice"/>        
+            <div  style="background-color: rgb(250, 250, 250)!important;" *ngIf="showQuestionInputForm && questionModels.length>0">
+                <div name="phoneNumber" style="height: 70px;margin-top: 10px;" *ngFor="let questionModel of questionModels">
+                    <mat-icon style="color: white;border-radius: 5px;" [ngStyle]="{'background-color': questionModel.backgroundColor}">{{questionModel.imageIcon}}</mat-icon>
+                    <input style="margin-left: 10px;box-shadow: none !important;border: 1px solid white !important;" name="question"  type="text" placeholder="Type question here..."/>     
                 </div>
             </div>
             <BR>
@@ -25,7 +21,10 @@
                     <label>Add your first question</label>
                     <div class="dropdown-menu show" *ngIf="showQuestionTypes" aria-labelledby="dropdownMenuLink">
                       <a class="dropdown-item">Choose a question type</a>  
-                      <a class="dropdown-item" (click)="selectQuestion(questionType.questionTypeKey)" *ngFor="let questionType of questionTypes">{{questionType.questionTypeName}}</a>
+                      <a class="dropdown-item" (click)="selectQuestion(questionType)" *ngFor="let questionType of questionTypes">
+                        <mat-icon style="color: white;border-radius: 5px;" [ngStyle]="{'background-color': questionType.backgroundColor}">{{questionType.imageIcon}}</mat-icon>
+                        <span style="margin-left: 10px;">{{questionType.questionTypeName}}</span>
+                      </a>
                     </div>
                   </div>
                   
